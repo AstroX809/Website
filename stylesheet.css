@@ -1,0 +1,82 @@
+.Logo {
+    height: 24px;
+    width: auto;
+}
+
+.Logo {
+    height: 26px;
+    width: auto;
+    padding: 3%;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+}
+
+.container {
+    padding-left: 7%;
+}
+
+.projects {
+    padding-left: 7%;
+    padding-top: 10%;
+}
+
+.card {
+    width: 390px;
+    height: 430px;
+    
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0) 37.29%), url(https://tinyurl.com/3jwz6ymc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    position: relative;
+  }
+  
+.card > .textcontainer > h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+  }
+  
+  .card > .textcontainer > p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+  
+  .card > .textcontainer > a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    transition: 0.1s ease-in;
+  }
+  
+  .card > .textcontainer > a:hover {
+      color: rgb(255, 255, 255);
+  }
+  
+  .card > .textcontainer {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .card > .textcontainer :where(h1, p, a) {
+    margin-top: -0.7rem;
+    margin-bottom: 1.3rem;
+  }
