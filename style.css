@@ -1,5 +1,5 @@
 .container {
-    max-width: 70%;
+    max-width: 60%;
     width: 100%;
     margin: 0 auto;
     margin-top: 0rem;
@@ -22,7 +22,11 @@
     margin-top: 8rem;
   }
   
-  
+  .container p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
   .wrapper {
     border-radius: 50%;
     margin-top: 6rem;
@@ -38,7 +42,7 @@
   }
   
   .wrapper > h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 37px;
     margin-top: 1rem;
     align-self: center;
@@ -48,7 +52,7 @@
   }
   
   .wrapper[reverse] > h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 37px;
     margin-top: 1rem;
     align-self: center;
