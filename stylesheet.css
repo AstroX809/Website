@@ -1,0 +1,15 @@
+body{
+    background-color: #1f1f2c;
+}
+
+.imglogo{
+    width: 320px;
+    height: 55px;
+    filter: invert(76%) sepia(9%) saturate(1150%) hue-rotate(206deg) brightness(105%) contrast(103%);
+}
+
+hr{
+    display: inline-block;
+    width: 500px;
+    background-color: #D2CBFF;
+}
