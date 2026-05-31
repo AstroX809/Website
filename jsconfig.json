@@ -10,5 +10,7 @@
         "sourceMap": true,
         "strict": true,
         "moduleResolution": "bundler"
-    }
+    },
+    "include": ["src/**/*", "src/**/*.svelte"],
+    "exclude": ["node_modules", ".svelte-kit", "dist", "build", "public"]
 }
