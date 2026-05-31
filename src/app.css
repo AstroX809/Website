@@ -227,6 +227,10 @@ a {
         --edge: 24px;
     }
 
+    .page-shell {
+        min-height: 720px;
+    }
+
     .site-header {
         top: 32px;
         height: 104px;
@@ -254,7 +258,7 @@ a {
     }
 
     .hero h1 {
-        font-size: clamp(54px, 10.4vw, 74px);
+        font-size: clamp(44px, 10.4vw, 74px);
     }
 
     .site-footer {
