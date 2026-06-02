@@ -15,6 +15,7 @@
 	{disabled}
 	aria-label={ariaLabel}
 	aria-disabled={disabled}
+	{...$$restProps}
 >
 	<span class="label"><slot>{label}</slot></span>
 </button>
