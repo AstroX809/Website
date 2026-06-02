@@ -26,11 +26,8 @@
     <meta name="description" content="About AstroX809." />
 </svelte:head>
 
-<body>
-    <SiteHeader></SiteHeader>
-    <Button ></Button>
-    <HeroTitle {lines} />
-</body>
+<Button />
+<HeroTitle {lines} />
 
 <div class="button-demo">
     <Button
