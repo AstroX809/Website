@@ -14,10 +14,12 @@
     function onPointerLeave() { isHovered = false; isPressed = false; }
 
     function onKeyDown(e) {
-        if (e.key === ' ' || e.key === 'Enter') isPressed = true;
+        const ev = e && e.key ? e : e && e.detail ? e.detail : null;
+        if (ev && (ev.key === ' ' || ev.key === 'Enter')) isPressed = true;
     }
     function onKeyUp(e) {
-        if (e.key === ' ' || e.key === 'Enter') isPressed = false;
+        const ev = e && e.key ? e : e && e.detail ? e.detail : null;
+        if (ev && (ev.key === ' ' || ev.key === 'Enter')) isPressed = false;
     }
 </script>
 
@@ -26,7 +28,6 @@
     <meta name="description" content="About AstroX809." />
 </svelte:head>
 
-<Button />
 <HeroTitle {lines} />
 
 <div class="button-demo">

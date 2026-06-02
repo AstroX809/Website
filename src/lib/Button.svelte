@@ -1,4 +1,7 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+
 	export let disabled = false;
 	export let ariaLabel = undefined;
 	export let fullWidth = false;
@@ -16,6 +19,12 @@
 	aria-label={ariaLabel}
 	aria-disabled={disabled}
 	{...$$restProps}
+	on:pointerdown={(e) => dispatch('pointerdown', e)}
+	on:pointerup={(e) => dispatch('pointerup', e)}
+	on:mouseenter={(e) => dispatch('mouseenter', e)}
+	on:mouseleave={(e) => dispatch('mouseleave', e)}
+	on:keydown={(e) => dispatch('keydown', e)}
+	on:keyup={(e) => dispatch('keyup', e)}
 >
 	<span class="label"><slot>{label}</slot></span>
 </button>
