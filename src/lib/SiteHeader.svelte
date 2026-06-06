@@ -1,18 +1,15 @@
 <script>
-    import { page } from '$app/stores';
-
+    export let activePath = '/';
+    
     const links = [
-        { href: '/about', label: 'about' },
+        { href: '/', label: 'about' },
         { href: '/projects', label: 'projects' },
         { href: '/blog', label: 'blog' }
     ];
-
-    $: pathname = $page.url.pathname;
-    $: activePath = pathname === '/' ? '/about' : pathname;
 </script>
 
 <header class="site-header">
-    <a class="brand" href="/about" aria-label="AstroX809 home">
+    <a class="brand" href="/" aria-label="AstroX809 home">
         <img src="/img/Frame.svg" alt="AstroX809" class="brand-logo" />
     </a>
     <div class="top-rule" aria-hidden="true"></div>
@@ -29,10 +26,9 @@
     .site-header {
         position: absolute;
         top: clamp(54px, 8.301vh, 85px);
-        left: 50%;
-        width: var(--content-width);
+        right: var(--page-gutter);
+        left: var(--page-gutter);
         height: 56px;
-        transform: translateX(-50%);
     }
 
     .brand,

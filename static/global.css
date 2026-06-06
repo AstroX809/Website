@@ -2,8 +2,8 @@
     --bg: #1f1f2c;
     --ink: #d2cbff;
     --button: #c1b8ff;
-    --content-width: min(85.833vw, 1030px);
-    --edge: max(40px, calc((100vw - var(--content-width)) / 2));
+    --page-gutter: clamp(40px, 7.083vw, 85px);
+    --edge: var(--page-gutter);
 }
 
 * {
@@ -23,6 +23,13 @@ body {
     overflow-x: hidden;
 }
 
+body.page-shell {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -30,13 +37,23 @@ a {
 
 @media (max-width: 900px) {
     :root {
-        --content-width: calc(100vw - 80px);
+        --page-gutter: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body.page-shell {
+        min-height: 1024px;
     }
 }
 
 @media (max-width: 760px) {
     :root {
-        --content-width: calc(100vw - 48px);
+        --page-gutter: 24px;
         --edge: 24px;
+    }
+
+    body.page-shell {
+        min-height: 720px;
     }
 }

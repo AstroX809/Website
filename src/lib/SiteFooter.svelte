@@ -16,12 +16,11 @@
 
 <style>
     .site-footer {
-        position: absolute;
+        position: fixed;
         bottom: clamp(50px, 8.301vh, 85px);
-        left: 50%;
-        width: var(--content-width);
+        right: var(--page-gutter);
+        left: var(--page-gutter);
         height: clamp(36px, 3.333vw, 40px);
-        transform: translateX(-50%);
     }
 
     .social-links,
@@ -70,14 +69,14 @@
     .copyright {
         position: absolute;
         top: 50%;
-        right: clamp(66px, 6.333vw, 76px);
+        right: 0;
         margin: 0;
         color: var(--ink);
         font-size: clamp(20px, 2vw, 24px);
         font-weight: 400;
         line-height: 1.013;
         white-space: nowrap;
-        transform: translate(100%, -50%);
+        transform: translateY(-50%);
     }
 
     @media (max-width: 900px) {
